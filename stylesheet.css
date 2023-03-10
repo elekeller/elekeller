@@ -1,0 +1,15 @@
+h1 {
+    color: rgb(255, 255, 255);
+
+}
+
+a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+body {
+    margin: 20px;
+    background-color: #5a5a5a;
+    font-family: "helvetica";
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+    <div id="loginfeld">
+        <div>
+            <label for="nname">Benutzername:</label>
+            <input type="text" placeholder="mister-x@mail.de" id="nname" required>
+        </div>
+        <div>
+            <label for="pwort">Passwort:</label>
+            <input type="text" placeholder="****" id="pwort" required>
+        </div>
+        <div>
+            <button class="sub" type="submit" onclick="loginscript()">Anmelden</button>
+        </div>
+        <script>
+            function loginscript() {
+                var pw = document.getElementById('pwort').value;
+                var nn = document.getElementById("nname").value;
+                document.writeln("<div>Herzlich Willkommen " + nn);
+            }
+        </script>
+
+    </div>
+</body>
+
+</html>

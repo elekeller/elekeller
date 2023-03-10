@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>elekeller</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="stylesheet0.css">
+</head>
+
+<body>
+    <h1>Catpics</h1>
+    <p>Die Seite für Katzenliebhaber</p>
+    <span>Wer keine Katzen mag kann hier </span><a href="http://elekeller.de/" style="color:brown">zurück</a>
+    <div class="catslideshow">
+
+
+        <img id="catpic" src="katze1.jpg" alt="katze1">
+        <div id="caption">
+            <div id="description">entspannte Katze</div>
+            <div id="numbertext">1/2</div>
+        </div>
+
+        <button onclick="switchpic()">Anderes Bild</button>
+        <script lang="javascript">
+            function switchpic() {
+                var s = document.getElementById('catpic').src;
+                var l = s.length;
+                if (s.substring(l - 10, l) == 'katze1.jpg') {
+                    document.getElementById('description').innerHTML = "gespannte Katze";
+                    document.getElementById('numbertext').innerHTML = "2/2";
+                    document.getElementById('catpic').src = 'katze2.jpg';
+                } else {
+                    document.getElementById('description').innerHTML = "entspannte Katze";
+                    document.getElementById('numbertext').innerHTML = "1/2";
+                    document.getElementById('catpic').src = 'katze1.jpg';
+                }
+            }
+        </script>
+    </div>
+</body>
+
+</html>
